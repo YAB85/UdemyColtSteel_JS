@@ -77,7 +77,7 @@ let y;
 console.log(y); */
 
 /******Math object */
-let x = 4.54654;
+/* let x = 4.54654;
 let y = 3;
 
 console.log(Math.PI); // 3.14159
@@ -86,6 +86,34 @@ console.log(Math.abs(x)); // - 4.543
 console.log(Math.pow(x, y)); // 93.98435
 console.log(Math.floor(34,2123)); // 4
 console.log(Math.random()); // 4
+
+
+Math.floor(Math.random()*6 + 1);  */
+
+/******typeOf */
+
+/* var x = 99;
+var y = true;
+var z = "sdsfsd";
+
+function Der () {};
+
+console.log(typeof(x));
+console.log(typeof(y));
+console.log(typeof(z));
+console.log(typeof(Der));
+console.log(typeof(null));
+console.log(typeof(x)); */
+
+/******ParseInt ParseFloat */
+let x = 2342.3242;
+
+console.log(parseInt(x));
+
+
+
+
+
 
 
 
