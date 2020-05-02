@@ -32,14 +32,62 @@ console.log(x); */
 /***** indexOf */
 
 
-'Baseball'.indexOf("ball"); // 4
-'Baseball'.indexOf("B"); // 0
+/* 'Baseball'.indexOf("ball"); // 4
+'Baseball'.indexOf("B"); // 0 */
 
 /********Slice */
 
-"Baseball".slice(4); //"ball"
+/* "Baseball".slice(4); //"ball"
 
-"superhero".slice(0,5);// "super"
+"superhero".slice(0,5);// "super" */
+
+/******** Replace */
+
+/* var x = 'baseball is entertaining'.replace('entertaining', 'ok');
+console.log(x); //baseball is ok */
+
+/******* IndexOf */
+
+/* let park = "Yellowstone";
+
+const index = park.indexOf("stone");
+
+console.log(index); */
+
+/* let garbage = 'GARBAGE!'.slice(2).replace("B", '');
+
+console.log(garbage); */
+
+/*******Template literals */
+
+/* let animal = "cow";
+
+let say = "muuu";
+
+console.log(`${animal} says ${say.toUpperCase()}`); */
+
+/*****Null & Undefined */
+
+/* let x = null;
+
+console.log(x);
+
+let y;
+
+console.log(y); */
+
+/******Math object */
+let x = 4.54654;
+let y = 3;
+
+console.log(Math.PI); // 3.14159
+console.log(Math.round(34,234)); // 5
+console.log(Math.abs(x)); // - 4.543
+console.log(Math.pow(x, y)); // 93.98435
+console.log(Math.floor(34,2123)); // 4
+console.log(Math.random()); // 4
+
+
 
 
 
