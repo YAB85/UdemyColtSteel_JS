@@ -106,10 +106,10 @@ console.log(typeof(null));
 console.log(typeof(x)); */
 
 /******ParseInt ParseFloat */
-let x = 2342.3242;
+/* let x = 2342.3242;
 
 console.log(parseInt(x));
-
+ */
 
 
 
