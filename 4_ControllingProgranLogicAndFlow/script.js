@@ -163,6 +163,14 @@ switch(day) {
 
 //condition ? expIfTrue : expIfFalse;
 
-let num = 6;
+//let num = 6;
 
-num === 7 ? console.log('lucky!') : console.log('Bad!'); 
+//num === 7 ? console.log('lucky!') : console.log('Bad!'); 
+let status = 'offline';
+
+let color = status === 'offline' ? 'red' : 'green';
+/* if (status === 'offline') {
+    color = 'red';
+}else {
+    color = 'green';
+} */
