@@ -149,6 +149,130 @@ console.log(animals); */
 
 /*****Sort */
 
-let num = [1, 12, 42, 1000, 35];
+/* let num = [1, 12, 42, 1000, 35];
 
-console.log(num.sort());
+console.log(num.sort()); */
+
+/* let x = 9;
+
+let y = 10;
+
+x = y;
+
+let z = x;
+
+var foo = 10 + '20'; // 1020
+
+console.log(foo); */
+/* console.log(( window.foo || ( window.foo = "bar" ))); bar
+
+
+console.log(0.1 + 0.2 == 0.3); // false */
+
+//console.log("i'm a lasagna hog".split("").reverse().join("")); // goh angasal a m'i
+
+/* var foo = "Hello";
+(function() {
+  var bar = " World";
+  alert(foo + bar);
+})();
+alert(foo + bar); // Hello World
+ */
+
+/* var foo = [];
+foo.push(1);
+foo.push(2);
+
+console.log(foo.length); //2 */
+
+/* var foo = {n: 1};
+var bar = foo;
+foo.x = foo = {n: 2};
+
+console.log(foo.x); // undefined
+
+
+console.log('one');
+setTimeout(function() {
+  console.log('two');
+}, 0);
+console.log('three'); // one three two
+
+doSomething().then(function () {
+    return doSomethingElse();
+  });
+  
+  doSomething().then(function () {
+    doSomethingElse();
+  });
+  
+  doSomething().then(doSomethingElse());
+  
+  doSomething().then(doSomethingElse); */
+
+
+/* let a; 
+
+let b = 9;
+
+let c= a + b;
+
+alert(c); */
+ 
+
+/************Reference Types */
+
+/*
+let fruit = "orange";
+
+let color = fruit;
+
+console.log(color);
+console.log(fruit);
+
+fruit = "watermelon";
+
+console.log(color);
+console.log(fruit); */
+
+/* let nums = [5, 6, 7, 8, 9];
+
+let otherNums = nums; */
+
+/* console.log(nums);
+console.log(otherNums); */
+
+/* nums.push(10);
+
+console.log(nums);
+console.log(otherNums); */
+
+/******Const & Arr */
+
+/* const myEggs = ['brown', 'brown'];
+myEggs.push('purple');
+console.log(myEggs);
+myEggs[0] = 'green';
+console.log(myEggs);
+ */
+
+/******nNested Arrays */
+
+/* const animalPairs = [
+    ['doe', 'buck'],
+    ['ewe','lady', 
+        ['peahen','tim'],
+        ['joe','chandler'],
+    ],
+    
+    ['sam','febby'],
+    ['norton','raichel'],
+];
+
+console.log(animalPairs);
+console.log(animalPairs.push([]));
+
+console.log(animalPairs); */
+
+
+
