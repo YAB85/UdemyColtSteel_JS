@@ -80,7 +80,7 @@ console.log(reversedWord); */
 
 }; */
 
-const gameBoard = [
+/* const gameBoard = [
   [4, 32, 8, 4],
   [64, 8, 32, 2],
   [8, 32, 16, 4],
@@ -93,4 +93,22 @@ for(let i = 0; i < gameBoard.length; i++){
     for(let j = 0; j < row.length; j++) {
      totalScore += row[j];
     }
+} */
+
+/******While loops */
+
+/* let num = 0; 
+while (num < 10) {
+  console.log(num);
+  num++;
+} */
+
+const target = Math.floor(Math.random() * 10);
+let guess = Math.floor(Math.random() * 10);
+
+while(guess !== target) {
+    console.log(`Start -> Target: ${target} Guess: ${guess}`);
+    guess = Math.floor(Math.random() * 10);
 }
+console.log(`End -> Target: ${target} Guess: ${guess}`);
+console.log(`Congrats you win!!`);
