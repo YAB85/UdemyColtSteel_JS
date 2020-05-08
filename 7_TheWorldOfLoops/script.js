@@ -103,7 +103,7 @@ while (num < 10) {
   num++;
 } */
 
-const target = Math.floor(Math.random() * 10);
+/* const target = Math.floor(Math.random() * 10);
 let guess = Math.floor(Math.random() * 10);
 
 while(guess !== target) {
@@ -111,4 +111,97 @@ while(guess !== target) {
     guess = Math.floor(Math.random() * 10);
 }
 console.log(`End -> Target: ${target} Guess: ${guess}`);
-console.log(`Congrats you win!!`);
+console.log(`Congrats you win!!`); */
+
+/******While break *****/
+
+/* const target = Math.floor(Math.random() * 10);
+let guess = Math.floor(Math.random() * 10);
+
+while (true) {
+  if (target === guess) break; 
+    console.log(`Start -> Target: ${target} Guess: ${guess}`);
+    guess = Math.floor(Math.random() * 10);
+  
+}
+console.log(`End -> Target: ${target} Guess: ${guess}`);
+console.log(`Congrats you win!!`); */
+
+/*******For*/
+
+/* const subreddits = [ 'soccer', 'popheads', 'cringe', 'books'];
+
+for(let sub of subreddits) {
+  console.log(sub);
+}
+
+for (let char of 'cockadoodloop') {
+  console.log(char.toUpperCase());
+} */
+
+const magicSquare = [
+  [2, 7, 6],
+  [9, 5, 1],
+  [4, 3, 8],
+];
+
+/* for(let i = 0; i < magicSquare.length; i++){
+  let row = magicSquare[i];
+  let sum = 0;
+  for(let j = 0; j < row.length; j++) {
+   sum += row[j];
+  }
+  console.log(`${row} summed to ${sum}`);
+} */
+
+/* for (let row of magicSquare){
+  let sum = 0;
+  for(let num of row) {
+    sum += num;
+  }
+
+  console.log(`${row} summed to ${sum}`);
+} */
+
+/* const words1 = ['mail', 'milk', 'bath', 'black'];
+const words2 = ['box', 'shake', 'tub', 'berry'];
+
+for(let i = 0; i < words1.length; i++) {
+    console.log(words1[i], words2[i]);
+} */
+
+/******For Loops for Object */
+
+/* const movieReviews = {
+    Arrival : 9.5,
+    Alien : 9,
+    Amelie : 8,
+    'In Bruges' : 9,
+    Amadeus : 10,
+    'Kill Bill' : 9,
+    'Little Miss Sunshine' : 8.5,
+    Coraline : 7.5
+};
+
+for(let movie of Object.keys(movieReviews)) {
+    console.log(movie, movieReviews[movie]);
+};
+
+const ratings = Object.values(movieReviews);
+let total = 0;
+for (let r of ratings) {
+  total += r;
+}
+let avg = total / ratings.length;
+console.log(avg); */
+
+const jeopardyWinnings = {
+  regularPlay : 2522700,
+  watsonChallenge : 2522700,
+  tournamentOfCampions : 2522700,
+  battleOfTheDecades : 2522700,
+};
+
+for (let prop in jeopardyWinnings) {
+  console.log(prop);
+}
