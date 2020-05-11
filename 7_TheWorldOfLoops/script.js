@@ -195,7 +195,7 @@ for (let r of ratings) {
 let avg = total / ratings.length;
 console.log(avg); */
 
-const jeopardyWinnings = {
+/* const jeopardyWinnings = {
   regularPlay : 2522700,
   watsonChallenge : 2522700,
   tournamentOfCampions : 2522700,
@@ -204,4 +204,27 @@ const jeopardyWinnings = {
 
 for (let prop in jeopardyWinnings) {
   console.log(prop);
+} 
+
+
+let total = 0;
+for (let prop in jeopardyWinnings) {
+  total += jeopardyWinnings[prop];
 }
+
+console.log(`Ken Jennings Total Earnings: ${total}`); */
+/* for (let i = 0; i < 25; i = i+3){
+  if(i === 6) continue;
+  console.log(i);
+} */
+
+let c = ['Hello', 3 , true];
+
+let out = document.getElementById('out');
+
+let str = '';
+
+for (let i = 0; i < c.length; i++) {
+  if (c[i] !== undefined) str += `${i} - ${c[i]} <br>`;
+}
+out.innerHTML = str;
