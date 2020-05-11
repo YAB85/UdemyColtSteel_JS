@@ -218,7 +218,7 @@ console.log(`Ken Jennings Total Earnings: ${total}`); */
   console.log(i);
 } */
 
-let c = ['Hello', 3 , true];
+/* let c = ['Hello', 3 , true];
 
 let out = document.getElementById('out');
 
@@ -227,4 +227,4 @@ let str = '';
 for (let i = 0; i < c.length; i++) {
   if (c[i] !== undefined) str += `${i} - ${c[i]} <br>`;
 }
-out.innerHTML = str;
+out.innerHTML = str; */
