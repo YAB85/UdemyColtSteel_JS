@@ -186,7 +186,7 @@ console.log(isValidPassword ('ss d', 'Jack')); */
  * avg([75, 76, 80, 95, 100]) // 85.2
  */
 
-let app = [0, 50, 60];
+/* let app = [0, 50, 60];
 let avgSum = [75, 76, 80, 95, 100];
 
 
@@ -207,7 +207,7 @@ console.log(avg(avgSum));
 /* 
 console.log(avg(avgSum)); */
 
-function avg(arr) {
+/*function avg(arr) {
     let total = 0;
     //loop over each num
     for (let num of arr) {
@@ -220,4 +220,87 @@ function avg(arr) {
 
 let arr1 = [75, 76, 80, 95, 100];
 
-console.log(avg(arr1));
+console.log(avg(arr1)); */
+
+/*********Exercise second */
+
+//let str = 'abcdefghijklmnopqrstuvwxyz';
+/*function isPangram(sentence) {
+    let lowerCased = sentence.toLowerCase();
+    for(let char of sentence){
+        if(lowerCased.indexOf(char) === -1){
+            return false;
+        }
+      }
+      return true;
+} */
+
+/* function isPangram(sentence) {
+    let aph = 'abcdefghijklmnopqrstuvwxyz';
+    let lowerCased = sentence.toLowerCase();
+    for(let char of aph ){
+        if(!lowerCased.includes(char)){
+            return false;
+        }
+      }
+      return true;
+} 
+
+let a = 'the five boxing wizards jump quickly';
+
+console.log(isPangram(a)); */
+
+/* function getCard() {
+    const values = [
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '9',
+        '10',
+        'J',
+        'Q',
+        'K',
+        'A'
+    ];
+    const  valIdx = Math.floor(Math.random() * values.length);
+    const value = values[valIdx];
+    
+    const suits = ['clubs', 'spades', 'hearts', 'diamonds'];
+    const  suitsIdx = Math.floor(Math.random() * suits.length);
+    const suit = suits[suitsIdx];
+    return {value: value, suit: suit};
+
+} */
+
+function pick (arr) {
+    const idx = Math.floor(Math.random() * arr.length);
+    return  arr[idx];
+}
+
+function getCard() {
+    const values = [
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '9',
+        '10',
+        'J',
+        'Q',
+        'K',
+        'A'
+    ];
+    const suits = ['clubs', 'spades', 'hearts', 'diamonds'];
+    
+    return {value: pick(values), suit: pick(suits)};
+
+}
