@@ -121,13 +121,13 @@ const sum = function (x, y) {
 /*******Higher Order Functions */
 
 /* function statement*///
-function add(x, y) {
+/* function add(x, y) {
     return x + y;
 }
 
 
 /****Function declaration */
-const subtract = function (x, y) {
+/* const subtract = function (x, y) {
     return x - y;
 }
 
@@ -150,4 +150,39 @@ for(let func of operations) {
 
 const thing = {
    doSomething: multiply
-}   
+}    */ 
+
+/* function callThreeTimes(f) {
+    f();
+    f();
+    f();
+}*/
+
+function cry() {
+    console.log("Boo hoo I`m so happy!");
+} 
+
+
+function rage() {
+    console.log("I`m so so happy!");
+} 
+
+function repeatNTomes(action, num){
+    for(let i = 0; i < num; i++) {
+        action();
+    }
+}
+
+//repeatNTomes(cry, 13);
+
+function pickOne(f1, f2) {
+    let rand = Math.random();
+    console.log(rand);
+    if(rand < 0.5) {
+        f1();
+    }else {
+        f2();
+    }
+}
+
+pickOne(cry, rage);
