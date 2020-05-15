@@ -158,7 +158,7 @@ const thing = {
     f();
 }*/
 
-function cry() {
+/* function cry() {
     console.log("Boo hoo I`m so happy!");
 } 
 
@@ -171,11 +171,11 @@ function repeatNTomes(action, num){
     for(let i = 0; i < num; i++) {
         action();
     }
-}
+} */
 
 //repeatNTomes(cry, 13);
 
-function pickOne(f1, f2) {
+/* function pickOne(f1, f2) {
     let rand = Math.random();
     console.log(rand);
     if(rand < 0.5) {
@@ -185,4 +185,83 @@ function pickOne(f1, f2) {
     }
 }
 
-pickOne(cry, rage);
+pickOne(cry, rage); */
+
+/*******Functions as Return Values */
+
+/* function multiplyBy (num){
+    return function(x) {
+        return x * num;
+    }
+}
+
+const triple = multiplyBy(3);
+const double = multiplyBy(2);
+
+console.log(triple(4));
+console.log(double(2)); */
+
+
+
+/* function multiplyBy (num){
+    const f =  function() {
+        console.log("Hi");
+    }
+    return f;
+} */
+
+//const isChild = makeBetweenFunc(0, 18);
+
+//isChild(5)//false
+
+/* function makeBetweenFunc(x,y){
+    return function(num) {
+        return num >= x && num <= y;
+    }
+};
+
+const isChild = makeBetweenFunc(0, 18);
+
+console.log(isChild(-1));
+
+const isInNineties = makeBetweenFunc(1990, 2000);
+
+console.log(isInNineties(2001)); */
+
+/*******Callback function */
+
+/* function grumps(){
+    alert("Hello, my friend");
+}
+
+setTimeout(grumps,5000); */
+
+
+
+/* const btn = document.querySelector('button');
+btn.addEventListener('click', function() {
+    alert('Why did you click me?');
+})
+
+setTimeout(function(){
+        console.log("hello");
+},5000); */
+
+
+/*****Hoisting */
+/* console.log(animal);
+var animal = 'Tapir'; */
+//console.log(animal);
+
+/* function howl() {
+    console.log("Awooooooo");
+}
+
+howl(); */
+hoot();
+
+var hoot = function () {
+    console.log("Hooo hooo");
+}
+
+hoot();
