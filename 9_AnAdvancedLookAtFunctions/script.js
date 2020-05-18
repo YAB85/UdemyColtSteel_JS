@@ -258,10 +258,10 @@ var animal = 'Tapir'; */
 }
 
 howl(); */
-hoot();
+/* hoot();
 
 var hoot = function () {
     console.log("Hooo hooo");
 }
 
-hoot();
+hoot(); */
