@@ -80,7 +80,7 @@ const numDetails = nums.map(function (n) {
 });
 console.log(numDetails); */
 
-const words = ['asap', 'byob', 'vrip', 'diy'];
+/* const words = ['asap', 'byob', 'vrip', 'diy'];
 const reverWords = words.map(function (word) {
     return word.toUpperCase().split('').reverse().join('.');
 });
@@ -109,4 +109,59 @@ const titles = books.map(function (b){
     return b.title;
 });
 
-console.log(titles);
+console.log(titles); */
+
+/******Arrow functions */
+
+/* const square = (x) => {
+    return x * x;
+} */
+
+/* const isEven = (num) => {
+    return num % 2 === 0;
+}; */
+
+/* const isEven = num => {
+    return num % 2 === 0;
+};
+
+
+
+const multiply = (x,y) => {
+    return x * y;
+};
+ */
+
+/* const isEven = function (num) {
+    return num % 2 === 0;
+};
+
+const isEven = (num) => {
+    return num % 2 === 0;
+};
+
+const isEven = num => {
+    return num % 2 === 0;
+};
+
+const isEven = num => {
+     num % 2 === 0;
+};
+
+const isEven = num => num % 2 === 0; */
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8];
+
+const double1 = nums.map(function (n) {
+    return n * 2;
+});
+
+const double2 = nums.map(n => {
+    return  n * 3});
+
+const double3 = nums.map(n => n * 4);
+
+const partiyList = nums.map((n) => (
+    n % 2 === 0 ? 'even' : 'odd'
+));
+
