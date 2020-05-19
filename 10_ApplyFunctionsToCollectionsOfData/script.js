@@ -260,7 +260,7 @@ const descSort = prices.slice().sort((a, b) => b - a); */
 	return total * currentVal;
 }); */
 
-const grades = [ 87, 64, 96, 92, 88, 99, 73, 70, 64 ];
+const grades = [87, 64, 96, 92, 88, 99, 73, 70, 64];
 
 /* const maxGrade = grades.reduce((max, currentVal) => {
 	if (currentVal > max) return currentVal;
@@ -268,9 +268,26 @@ const grades = [ 87, 64, 96, 92, 88, 99, 73, 70, 64 ];
 }); */
 
 const maxGrade = grades.reduce((max, currentVal) => {
-	return Math.max(max, currentVal);
+    return Math.max(max, currentVal);
 });
 
 const minGrade = grades.reduce((min, currentVal) => {
-	return Math.min(min, currentVal);
+    return Math.min(min, currentVal);
 });
+
+const votes = ['y', 'y', 'n', 'y', 'n', 'y', 'absent', 'n', 'y', 'n', 'n', 'n', 'y', 'y'];
+
+const result = votes.reduce((tally, val) => {
+    if (tally[val]) {
+        tally[val]++;
+    } else {
+        tally[val] = 1;
+    }
+    return tally;
+}, {});
+
+
+/* const result = votes.reduce((tally, val) => {
+    tally[val] = (tally[val] || 0) + 1;
+    return tally;
+}, {}); */
