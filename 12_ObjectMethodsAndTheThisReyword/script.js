@@ -11,8 +11,6 @@
 	}
 } */
 
-
-
 /* const getStats = (arr) => {
 	const max = Math.max(...arr);
 	const min = Math.min(...arr);
@@ -64,7 +62,7 @@ const res = addProp(team, 'happy', ':)'); */
 
 /*****Adding Methods to Object */
 
-const math = {
+/* const math = {
 	multiply: function (x, y) {
 		return x * y;
 	},
@@ -74,4 +72,33 @@ const math = {
 	square: function (x) {
 		return x * x;
 	}
-};
+}; */
+
+/* let a = (1, 5 - 1) * 2;
+
+alert(a); */
+
+/* let sillyString = 'hAy, hoW Are yOu!';
+let lowerCase = sillyString.toLowerCase();
+console.log(lowerCase);
+let newString = lowerCase.split(' ');
+
+/* for (let i = 0; i <= sillyString.length; i+=){
+
+} */
+/* let firstWord = newString[0];
+let firstLetter = firstWord[0].toUpperCase();
+console.log(firstLetter);
+let newWord = ;
+console.log(newWord); */
+let randomBodyParts = [ 'eyes', 'nose', 'skull' ];
+let randomAdjectives = [ 'вонючая', 'унылая', 'дурацкая' ];
+let randomWords = [ 'муха', 'выдра', 'дубина', 'мартышка', 'крыса' ];
+
+let randomBodyPart = randomBodyParts[Math.floor(Math.random() * 3)];
+let randomAdjective = randomAdjectives[Math.floor(Math.random() * 3)];
+let randomWord = randomWords[Math.floor(Math.random() * 5)];
+
+let randomInsult = 'You have a ' + randomBodyPart + ' like as ' + randomAdjective + ' ' + randomWord + '!!!';
+
+console.log(randomInsult);
