@@ -176,6 +176,6 @@ console.log(null === +'\n0\n'); // false */
 /* let userName = prompt('What is your name?', '');
 alert(userName); */
 
-if ('0') {
+/* if ('0') {
 	alert('Hello');
-}
+} */
