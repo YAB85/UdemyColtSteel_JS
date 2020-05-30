@@ -113,7 +113,7 @@ const person = {
 
 /********Annoyomatic Demo */
 
-const annoyer = {
+/* const annoyer = {
 	phrases: [ 'literally', 'cray cray', 'I can`t even', 'Totes!', 'YOLO', 'Can`t Stop, Won`t Stop' ],
 	pickPhrase() {
 		const { phrases } = this;
@@ -128,4 +128,124 @@ const annoyer = {
 	stop() {
 		clearInterval(this.timerId);
 	}
+}; */
+
+/*********Deck of Cards */
+
+/* function makeDeck() {
+	const deck = [];
+	
+		}
+	}
+	return deck;
+} */
+
+/* function drawCard(deck) {
+	return deck.pop();
+} */
+
+/* const myDeck = makeDeck();
+const card1 = drawCard(myDeck); */
+
+/* const myDeck = {
+	deck: [],
+	drawCards: [],
+	suits: [ 'hearts', 'diamonds', 'spades', 'clubs' ],
+	values: '2,3,4,5,6,7,8,9,10,J,Q,K,A',
+	initializeDeck() {
+		const { suits, values, deck } = this;
+		for (let value of values.split(',')) {
+			for (let suit of suits) {
+				deck.push({
+					value,
+					suit
+				});
+			}
+		}
+		//return deck;
+	},
+	drawCard() {
+		const card = this.deck.pop();
+		this.drawCards.push(card);
+		return card;
+	},
+	drawMultiple(numCards) {
+		const cards = [];
+		for (let i = 0; i < numCards; i++) {
+			cards.push(this.drawCard());
+		}
+		return cards;
+	},
+	shuffle(arr) {
+		const { deck } = this;
+		//loop over array backwards
+		for (let i = deck.length - 1; i > 0; i--) {
+			//pick random index before current element
+			let j = Math.floor(Math.random() * (i + 1));
+			//swap
+			[ deck[i], deck[j] ] = [ deck[j], deck[i] ];
+			console.log(arr);
+		}
+	}
+}; */
+
+/* const firstDeck = initializeDeck();
+const drawnCards = [];
+shuffle(firstDeck);
+const hand1 = drawMultiple(2, firstDeck, drawCards);
+const hand2 = drawMultiple(2, firstDeck, drawCards);
+const pokerHand = drawMultiple(5, firstDeck, drawCards); */
+
+const makeDeck = () => {
+	return {
+		deck: [],
+		drawCards: [],
+		suits: [ 'hearts', 'diamonds', 'spades', 'clubs' ],
+		values: '2,3,4,5,6,7,8,9,10,J,Q,K,A',
+		initializeDeck() {
+			const { suits, values, deck } = this;
+			for (let value of values.split(',')) {
+				for (let suit of suits) {
+					deck.push({
+						value,
+						suit
+					});
+				}
+			}
+			//return deck;
+		},
+		drawCard() {
+			const card = this.deck.pop();
+			this.drawCards.push(card);
+			return card;
+		},
+		drawMultiple(numCards) {
+			const cards = [];
+			for (let i = 0; i < numCards; i++) {
+				cards.push(this.drawCard());
+			}
+			return cards;
+		},
+		shuffle(arr) {
+			const { deck } = this;
+			//loop over array backwards
+			for (let i = deck.length - 1; i > 0; i--) {
+				//pick random index before current element
+				let j = Math.floor(Math.random() * (i + 1));
+				//swap
+				[ deck[i], deck[j] ] = [ deck[j], deck[i] ];
+				console.log(arr);
+			}
+		}
+	};
 };
+
+const myDeck = makeDeck();
+myDeck.initializeDeck();
+myDeck.shuffle();
+const h1 = myDeck.drawMultiple(2);
+const h2 = myDeck.drawMultiple(2);
+const h3 = myDeck.drawMultiple(5);
+
+const deck2 = makeDeck();
+deck2.initializeDeck();
