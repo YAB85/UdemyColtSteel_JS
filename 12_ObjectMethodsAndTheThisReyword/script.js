@@ -234,7 +234,7 @@ const makeDeck = () => {
 				let j = Math.floor(Math.random() * (i + 1));
 				//swap
 				[ deck[i], deck[j] ] = [ deck[j], deck[i] ];
-				console.log(arr);
+				// console.log(arr);
 			}
 		}
 	};
