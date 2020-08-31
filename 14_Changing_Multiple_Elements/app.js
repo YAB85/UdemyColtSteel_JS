@@ -88,3 +88,11 @@ const firstLi = document.querySelector('li.todo');
 
 const lastUl = document.querySelectorAll('li.todo')[3];
 const lastTodo = document.querySelectorAll('li.todo')[2];
+
+const i = document.createElement('i');
+
+i.innerText = 'I am italics';
+
+const ul = document.querySelector('section ul');
+
+const removeMe = ul.querySelector('.special');
